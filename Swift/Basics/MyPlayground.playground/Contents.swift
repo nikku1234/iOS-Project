@@ -83,3 +83,34 @@ default:
 
 
 //Understanding Arrays and Dictionaries
+var bookCollection = ["Tool of Titans", "Rework", "Your Move"]
+bookCollection[1]
+
+for i in 0...2{
+    print(bookCollection[i])
+}
+
+for i in 0...bookCollection.count - 1{
+    print(bookCollection[i])
+}
+
+for b in bookCollection{
+    print(b)
+}
+
+//Dictionary
+var bookCollectionDict = ["1328683788": "Tool of Titans", "0307463745": "Rework", "1612060919": "Authority"]
+bookCollectionDict["0307463745"]
+
+for (key,value) in bookCollectionDict{
+    print("ISBN: \(key)")
+    print("Title: \(value)")
+}
+
+var emojiDict =  ["👻":"Ghost","💩":"Poop","😠":"Angry","😱":"Scream"]// Fill in the code for initializing the dictionary //
+
+var wordToLookup = "👻" // Fill in the Ghost emoji //
+var meaning = emojiDict[wordToLookup]// Fill in the code for accessing the value //
+
+wordToLookup = "😱"// Fill in the Angry emoji //
+meaning = emojiDict[wordToLookup]// Fill in the code for accessing the value //
